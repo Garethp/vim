@@ -29,3 +29,8 @@ if has("gui_running")
 	" Remove Toolbar
 	set guioptions -=T
 endif
+
+" Map Ctrl-M to run the current php file, and Ctrl-L to run it through PHP
+" parse
+autocmd FileType php noremap <C-M> :w!<CR>:!clear && /usr/bin/php %<CR>
+autocmd FileType php noremap <C-L> :!clear && /usr/bin/php -l %<CR>
