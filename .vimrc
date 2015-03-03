@@ -1,8 +1,22 @@
+" This must be first, because it changes other options as side effect
+set nocompatible
+
 " Set tabs to take up four spaces
 filetype plugin indent on
 set autoindent
-set tabstop=4
-set shiftwidth=4
+set smartindent
+set tabstop=8
+set shiftwidth=8
+set backspace=indent,eol,start
+
+" Python uses spaces, not tabs, so let's set that
+autocmd filetype python set expandtab
+
+" Show matching parenthesis
+set showmatch
+
+" Highlight search terms
+set hlsearch
 
 " Show information on currently running command
 set showcmd
@@ -23,9 +37,8 @@ set mouse=a
 set number
 
 " Set my colorscheme
+colorscheme mustang
 if has("gui_running")
-	colorscheme elflord
-
 	" Remove Toolbar
 	set guioptions -=T
 endif
@@ -34,3 +47,22 @@ endif
 " parse
 autocmd FileType php noremap <C-M> :w!<CR>:!clear && /usr/bin/php %<CR>
 autocmd FileType php noremap <C-L> :!clear && /usr/bin/php -l %<CR>
+
+" Use pathogen to easily modify the runtime path to include all
+" plugins under the ~/.vim/bundle directory
+call pathogen#helptags()
+call pathogen#infect()
+
+" Don't wrap lines
+set nowrap
+
+" Remember more commands and search history
+set history=1000
+
+" Have more levels of undo
+set undolevels=100
+
+set wildignore=*.swp,*.bak,*.pyc,*.class
+
+" Change the terminals title
+set title
