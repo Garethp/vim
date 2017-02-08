@@ -64,9 +64,9 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 " Change the terminals title
 set title
 
-" For the lightline plugin, show lightline
+" Load various config files
 so ~/.vim/config/lightline.vim
-set laststatus=2
+so ~/.vim/config/ale.vim
 
 " When on tmux and GNU, for some reason moving the cursor to down, and the
 " page scrolls, the background colour of the colour scheme disappears. This
