@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/lightline"]
+	path = .vim/bundle/lightline
+	url = https://github.com/itchyny/lightline.vim
+[submodule ".vim/bundle/codi"]
+	path = .vim/bundle/codi
+	url = git@github.com:metakirby5/codi.vim.git

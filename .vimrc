@@ -2,6 +2,7 @@
 set nocompatible
 
 " Set tabs to take up four spaces
+execute pathogen#infect()
 filetype plugin indent on
 set autoindent
 set smartindent
@@ -37,7 +38,7 @@ set mouse=a
 set number
 
 " Set my colorscheme
-colorscheme mustang
+colorscheme darcula
 if has("gui_running")
 	" Remove Toolbar
 	set guioptions -=T
@@ -47,11 +48,6 @@ endif
 " parse
 autocmd FileType php noremap <C-M> :w!<CR>:!clear && /usr/bin/php %<CR>
 autocmd FileType php noremap <C-L> :!clear && /usr/bin/php -l %<CR>
-
-" Use pathogen to easily modify the runtime path to include all
-" plugins under the ~/.vim/bundle directory
-call pathogen#helptags()
-call pathogen#infect()
 
 " Don't wrap lines
 set nowrap
@@ -66,3 +62,12 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 
 " Change the terminals title
 set title
+
+" For the lightline plugin, show lightline
+so ~/.vim/config/lightline.vim
+set laststatus=2
+
+" When on tmux and GNU, for some reason moving the cursor to down, and the
+" page scrolls, the background colour of the colour scheme disappears. This
+" fixes that. See https://sunaku.github.io/vim-256color-bce.html
+set t_ut=
