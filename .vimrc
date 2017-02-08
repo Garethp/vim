@@ -3,6 +3,7 @@ set nocompatible
 
 " Set tabs to take up four spaces
 execute pathogen#infect()
+Helptags
 filetype plugin indent on
 set autoindent
 set smartindent
