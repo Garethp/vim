@@ -7,9 +7,10 @@ Helptags
 filetype plugin indent on
 set autoindent
 set smartindent
-set tabstop=8
-set shiftwidth=8
+set tabstop=4
+set shiftwidth=4
 set backspace=indent,eol,start
+set expandtab
 
 " Python uses spaces, not tabs, so let's set that
 autocmd filetype python set expandtab
