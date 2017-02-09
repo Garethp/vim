@@ -42,6 +42,7 @@ set clipboard=unnamedplus
 
 " Load various config files
 so ~/.vim/config/lightline.vim
+so ~/.vim/config/nerdcommenter.vim
 so ~/.vim/config/ale.vim
 so ~/.vim/config/autocomplete.vim
 so ~/.vim/config/theme.vim

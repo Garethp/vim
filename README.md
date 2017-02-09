@@ -31,6 +31,7 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
  * In Visual Mode and Normal Mode, the `Tab` key will indent the selected lines
  * The `Shift-Tab` combination unindents lines
  * Ale has been configured to lint PHP to `PSR-2` standards
+ * `Ctrl-/` has been mapping to have NERDCommenter toggle comments in Normal, Visual and Insert Mode
 
 ## Using the plugins
 
