@@ -13,6 +13,7 @@ This is my own personal vim config so that it's easy to download and install on 
  * [NerdCommenter](https://github.com/scrooloose/nerdcommenter) - A plugin to help comment and uncomment code
  * [Vim Markdown Preview](https://github.com/JamshedVesuna/vim-markdown-preview) - A plugin to show a live preview of Markdown in the browser
  * [Vim Fugitive](https://github.com/tpope/vim-fugitive) - Popular wrapper around vim
+ * [Vim JSON](https://github.com/elzr/vim-json) - Better JSON syntax
 
 ## Personal Configurations
 Most of the configurations for this vim setup can be found in the `.vim/config/` folder, but here's a quick rundown

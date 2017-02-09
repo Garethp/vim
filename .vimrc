@@ -5,9 +5,6 @@ set nocompatible
 execute pathogen#infect()
 Helptags
 
-" Python uses spaces, not tabs, so let's set that
-autocmd filetype python set expandtab
-
 " Show matching parenthesis
 set showmatch
 
@@ -16,11 +13,6 @@ set hlsearch
 
 " Show information on currently running command
 set showcmd
-
-" Syntax Highlighting and such
-filetype on
-filetype plugin on
-syntax enable
 
 " Use english for spellchecking, but don't use it by default
 set spl=en_au spell
@@ -55,3 +47,4 @@ so ~/.vim/config/autocomplete.vim
 so ~/.vim/config/theme.vim
 so ~/.vim/config/indentation.vim
 so ~/.vim/config/markdown.vim
+so ~/.vim/config/syntax.vim
