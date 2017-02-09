@@ -41,4 +41,6 @@ To see the manual, use the `:help nerdcommenter` command
 Install `grip` through `pip install grip` to start, then when editing a markdown file, save it and use `Ctrl-P`, and a preview will open in the browser
 
 ### Vim Fugitive
-Use `:Gstatus` to show the git status, with the `-` key to add a file. See `:help fugitive` for more
+Use `:Gstatus` to show the git status, with the `-` key to add a file. 
+Use `:Gblame` to annotate the file
+See `:help fugitive` for more
