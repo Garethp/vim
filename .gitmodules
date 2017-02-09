@@ -13,3 +13,12 @@
 [submodule ".vim/bundle/phpcomplete"]
 	path = .vim/bundle/phpcomplete
 	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule ".vim/bundle/vdebug"]
+	path = .vim/bundle/vdebug
+	url = git@github.com:joonty/vdebug.git
+[submodule ".vim/bundle/vim-markdown-preview"]
+	path = .vim/bundle/vim-markdown-preview
+	url = git@github.com:JamshedVesuna/vim-markdown-preview.git
+[submodule ".vim/bundle/markdown-table-mode"]
+	path = .vim/bundle/markdown-table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git

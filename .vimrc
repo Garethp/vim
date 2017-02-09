@@ -54,3 +54,4 @@ so ~/.vim/config/ale.vim
 so ~/.vim/config/autocomplete.vim
 so ~/.vim/config/theme.vim
 so ~/.vim/config/indentation.vim
+so ~/.vim/config/markdown.vim
