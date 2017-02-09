@@ -3,7 +3,10 @@
 set completeopt=longest,menuone
 
 " Sets smarter php autocompletion
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
+" Make phpcomplete-extended use the global composer
+let g:phpcomplete_index_composer_command="composer"
            
 " Make Enter fill in the value
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"

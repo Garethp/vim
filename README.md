@@ -10,11 +10,13 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Ale](https://github.com/w0rp/ale) - Code Linting Engine
  * [Codi](https://github.com/metakirby5/codi.vim) - Live Preview of Scratch Code
  * [DelimitMate](https://github.com/Raimondi/delimitMate) - Automatic brace adder
+ * [PhpComplete-Extended](https://github.com/m2mdas/phpcomplete-extended) - PHP Autocomplete
  * [Vim Table Mode](https://github.com/dhruvasagar/vim-table-mode) - A Live Table Formatter for Markdown
  * [NerdCommenter](https://github.com/scrooloose/nerdcommenter) - A plugin to help comment and uncomment code
  * [Vim Markdown Preview](https://github.com/JamshedVesuna/vim-markdown-preview) - A plugin to show a live preview of Markdown in the browser
  * [Vim Fugitive](https://github.com/tpope/vim-fugitive) - Popular wrapper around vim
  * [Vim JSON](https://github.com/elzr/vim-json) - Better JSON syntax
+ * [Vim Proc](https://github.com/Shougo/vimproc.vim) - Required by phpcomplete-extended
 
 ## Personal Configurations
 Most of the configurations for this vim setup can be found in the `.vim/config/` folder, but here's a quick rundown
@@ -32,6 +34,9 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
 
 ### Codi
 To enable Codi, use the `:Codi` command, to disable it use `:Codi!:`
+
+### PHP Complete Extended
+It's meant to be a better PHP autocompletion. Requires you to install `vimproc`, which itself requires a `make` command.
 
 ### Vim Table Mode
 To toggle table editing mode, type `<Leader>tt`

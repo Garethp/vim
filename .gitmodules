@@ -31,3 +31,9 @@
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
+[submodule ".vim/bundle/vimproc"]
+	path = .vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim
+[submodule ".vim/bundle/phpcomplete-extended"]
+	path = .vim/bundle/phpcomplete-extended
+	url = git@github.com:m2mdas/phpcomplete-extended.git
