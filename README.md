@@ -3,6 +3,8 @@ This is my own personal vim config so that it's easy to download and install on 
 
 ## Installation
  * Clone this Repository
+ * Run `git submodule update` to install plugins
+ * Go in to `.vim/bundle/vimproc` and run `make`
  * Create a symlink for `.vimrc` and `.vim/`
 
 ## Plugins Included
