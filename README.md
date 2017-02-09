@@ -9,6 +9,7 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Pathogen](https://github.com/tpope/vim-pathogen) - Plugin Manager
  * [Ale](https://github.com/w0rp/ale) - Code Linting Engine
  * [Codi](https://github.com/metakirby5/codi.vim) - Live Preview of Scratch Code
+ * [DelimitMate](https://github.com/Raimondi/delimitMate) - Automatic brace adder
  * [Vim Table Mode](https://github.com/dhruvasagar/vim-table-mode) - A Live Table Formatter for Markdown
  * [NerdCommenter](https://github.com/scrooloose/nerdcommenter) - A plugin to help comment and uncomment code
  * [Vim Markdown Preview](https://github.com/JamshedVesuna/vim-markdown-preview) - A plugin to show a live preview of Markdown in the browser
