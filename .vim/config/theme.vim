@@ -15,3 +15,7 @@ set number
 
 " Change the title of the terminal
 set title
+
+" When in edit mode, highlight the line slightly so it's more visible that
+" you're in edit more
+autocmd InsertEnter,InsertLeave * set cul!
