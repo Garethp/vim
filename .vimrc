@@ -4,13 +4,6 @@ set nocompatible
 " Set tabs to take up four spaces
 execute pathogen#infect()
 Helptags
-filetype plugin indent on
-set autoindent
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set backspace=indent,eol,start
-set expandtab
 
 " Python uses spaces, not tabs, so let's set that
 autocmd filetype python set expandtab
@@ -36,16 +29,6 @@ set nospell
 " Enable mouse support in console
 set mouse=a
 
-" Enable line numbers
-set number
-
-" Set my colorscheme
-colorscheme darcula
-if has("gui_running")
-	" Remove Toolbar
-	set guioptions -=T
-endif
-
 " Map Ctrl-M to run the current php file, and Ctrl-L to run it through PHP
 " parse
 autocmd FileType php noremap <C-M> :w!<CR>:!clear && /usr/bin/php %<CR>
@@ -62,14 +45,12 @@ set undolevels=100
 
 set wildignore=*.swp,*.bak,*.pyc,*.class
 
-" Change the terminals title
-set title
+" Set the clipboard to the system clipboard
+set clipboard=unnamedplus
 
 " Load various config files
 so ~/.vim/config/lightline.vim
 so ~/.vim/config/ale.vim
-
-" When on tmux and GNU, for some reason moving the cursor to down, and the
-" page scrolls, the background colour of the colour scheme disappears. This
-" fixes that. See https://sunaku.github.io/vim-256color-bce.html
-set t_ut=
+so ~/.vim/config/autocomplete.vim
+so ~/.vim/config/theme.vim
+so ~/.vim/config/indentation.vim
