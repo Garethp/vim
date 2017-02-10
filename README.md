@@ -34,6 +34,7 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
  * The `Shift-Tab` combination unindents lines
  * Ale has been configured to lint PHP to `PSR-2` standards
  * `Ctrl-/` has been mapping to have NERDCommenter toggle comments in Normal, Visual and Insert Mode
+ * Pressing `F3` in normal mode will toggle NERDTree
 
 ## Using the plugins
 
@@ -44,7 +45,8 @@ To enable Codi, use the `:Codi` command, to disable it use `:Codi!:`
 It's meant to be a better PHP autocompletion. Requires you to install `vimproc`, which itself requires a `make` command.
 
 ### NERDTree
-Open NERDTree with `:NERDTree`, or open it in (improved) tab mode with `:NERDTreeTabsToggle`. 
+Open NERDTree with `:NERDTree`, or open it in (improved) tab mode with `:NERDTreeTabsToggle`.
+Alternatively, I've mapped `F3` in normal mode to `:NERDTreeTabsToggle`
 When over file, use `o` to open the file, or `t` to open the file in a tab.
 When over a folder, press `m` to manipulate the folder (Add new files or folders, or moving it).
 See `:help NERDTree` for more information
