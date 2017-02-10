@@ -37,3 +37,9 @@
 [submodule ".vim/bundle/phpcomplete-extended"]
 	path = .vim/bundle/phpcomplete-extended
 	url = git@github.com:m2mdas/phpcomplete-extended.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".vim/bundle/nerdtree-tabs"]
+	path = .vim/bundle/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
