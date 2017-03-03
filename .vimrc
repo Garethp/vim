@@ -50,3 +50,4 @@ so ~/.vim/config/indentation.vim
 so ~/.vim/config/markdown.vim
 so ~/.vim/config/syntax.vim
 so ~/.vim/config/nerdtree.vim
+so ~/.vim/config/keymappings.vim

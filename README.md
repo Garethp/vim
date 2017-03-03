@@ -35,6 +35,8 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
  * Ale has been configured to lint PHP to `PSR-2` standards
  * `Ctrl-/` has been mapping to have NERDCommenter toggle comments in Normal, Visual and Insert Mode
  * Pressing `F3` in normal mode will toggle NERDTree
+ * Pressing `<Leader>d` deletes something without copying it
+ * Pressing `<Leader>p` in `Visual Mode` pastes over the current text
 
 ## Using the plugins
 
