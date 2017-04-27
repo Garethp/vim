@@ -3,3 +3,5 @@
 nnoremap <Leader>d "_d
 vnoremap <Leader>d "_d
 vnoremap <Leader>p "_dP
+nnoremap <silent> <Leader>\| <C-w>v
+nnoremap <silent> <Leader>- <C-w>s

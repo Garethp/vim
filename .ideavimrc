@@ -1,3 +1,5 @@
+set clipboard+=unnamed
+
 " When in Command mode or Visual Mode, have the tab key indent the line
 nnoremap <Tab> >>
 vnoremap <Tab> >

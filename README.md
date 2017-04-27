@@ -21,6 +21,8 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Vim Fugitive](https://github.com/tpope/vim-fugitive) - Popular wrapper around vim
  * [Vim JSON](https://github.com/elzr/vim-json) - Better JSON syntax
  * [Vim Proc](https://github.com/Shougo/vimproc.vim) - Required by phpcomplete-extended
+ * [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator) - Adds seamless vim/tmux navigation
+ * [Vimux](https://github.com/benmills/vimux) - Running a command from vim in a tmux shell
 
 ## Personal Configurations
 Most of the configurations for this vim setup can be found in the `.vim/config/` folder, but here's a quick rundown
@@ -37,6 +39,7 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
  * Pressing `F3` in normal mode will toggle NERDTree
  * Pressing `<Leader>d` deletes something without copying it
  * Pressing `<Leader>p` in `Visual Mode` pastes over the current text
+ * For split window navigation, instead of `Ctrl-W [HJKL]`, I've set it so you can just do `Ctrl+[HJKL]`
 
 ## Using the plugins
 
@@ -68,3 +71,10 @@ Use `:Gstatus` to show the git status, with the `-` key to add a file.
 Use `:Gblame` to annotate the file
 
 See `:help fugitive` for more
+
+### Vimux
+The key combination `<Leader>vp` will prompt you for a command to run in a tmux pane, 
+
+`<Leader>vl` will run the last command in tmux
+
+`<Leader>vz` will "zoom" the tmux pane

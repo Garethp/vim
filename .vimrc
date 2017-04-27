@@ -51,3 +51,5 @@ so ~/.vim/config/markdown.vim
 so ~/.vim/config/syntax.vim
 so ~/.vim/config/nerdtree.vim
 so ~/.vim/config/keymappings.vim
+so ~/.vim/config/navigation.vim
+so ~/.vim/config/tmux.vim
