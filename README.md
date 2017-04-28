@@ -25,6 +25,8 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Vimux](https://github.com/benmills/vimux) - Running a command from vim in a tmux shell
 
 ## Personal Configurations
+
+### Vim Preferences
 Most of the configurations for this vim setup can be found in the `.vim/config/` folder, but here's a quick rundown
 
  * `<Leader>` is at the moment defaulte to `\`
@@ -40,6 +42,11 @@ Most of the configurations for this vim setup can be found in the `.vim/config/`
  * Pressing `<Leader>d` deletes something without copying it
  * Pressing `<Leader>p` in `Visual Mode` pastes over the current text
  * For split window navigation, instead of `Ctrl-W [HJKL]`, I've set it so you can just do `Ctrl+[HJKL]`
+
+### Tmux Preferences
+ * `<Prefix>` has been changed to `Ctrl + Space`
+ * Splitting panes has been bound to `<Prefix> + -` and `<Prefix> + \`
+ * Split nagivation can be done with CTRL+[HJKL] to match vim
 
 ## Using the plugins
 
