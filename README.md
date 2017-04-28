@@ -3,9 +3,8 @@ This is my own personal vim config so that it's easy to download and install on 
 
 ## Installation
  * Clone this Repository
- * Run `git submodule update` to install plugins
- * Go in to `.vim/bundle/vimproc` and run `make`
- * Create a symlink for `.vimrc` and `.vim/`
+ * Run `git submodule init && git submodule update` to install plugins
+ * Create a symlink for `.vimrc`, `.tmux.conf`, `.vim`
 
 ## Plugins Included
  * [Pathogen](https://github.com/tpope/vim-pathogen) - Plugin Manager
