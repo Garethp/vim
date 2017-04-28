@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vdebug"]
 	path = .vim/bundle/vdebug
 	url = git@github.com:Garethp/vdebug.git
+[submodule ".vim/bundle/phpawesome-debugger"]
+	path = .vim/bundle/phpawesome-debugger
+	url = git@github.com:Garethp/phpawesome-debugger.git
