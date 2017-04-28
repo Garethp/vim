@@ -21,11 +21,6 @@ set nospell
 " Enable mouse support in console
 set mouse=a
 
-" Map Ctrl-M to run the current php file, and Ctrl-L to run it through PHP
-" parse
-autocmd FileType php noremap <C-M> :w!<CR>:!clear && /usr/bin/php %<CR>
-autocmd FileType php noremap <C-L> :!clear && /usr/bin/php -l %<CR>
-
 " Don't wrap lines
 set nowrap
 
