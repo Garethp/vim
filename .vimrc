@@ -48,3 +48,11 @@ so ~/.vim/config/nerdtree.vim
 so ~/.vim/config/keymappings.vim
 so ~/.vim/config/navigation.vim
 so ~/.vim/config/tmux.vim
+
+
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin\n"
+      so ~/.vim/config/osx.vim
+  endif
+endif
