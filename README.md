@@ -62,7 +62,7 @@ When over a folder, press `m` to manipulate the folder (Add new files or folders
 See `:help NERDTree` for more information
 
 ### Vim Table Mode
-To toggle table editing mode, type `<Leader>tt`
+To toggle table editing mode, type `<Leader>tm`
 
 ### NerdCommenter
 To see the manual, use the `:help nerdcommenter` command
@@ -82,4 +82,4 @@ The key combination `<Leader>vp` will prompt you for a command to run in a tmux 
 
 `<Leader>vl` will run the last command in tmux
 
-`<Leader>vz` will "zoom" the tmux pane
+`<Leader>vz` will "zoom" the tmux pane, and then `<Prefix> z` will zoom back out
