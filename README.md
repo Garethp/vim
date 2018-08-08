@@ -6,6 +6,9 @@ This is my own personal vim config so that it's easy to download and install on 
  * Run `git submodule init && git submodule update` to install plugins
  * Create a symlink for `.vimrc`, `.tmux.conf`, `.vim`
 
+## Installing Extras
+ * For `Ale` install `phpcs` and `eslint` globally, as well as any other linters you want Ale to use
+
 ## Plugins Included
  * [Pathogen](https://github.com/tpope/vim-pathogen) - Plugin Manager
  * [Ale](https://github.com/w0rp/ale) - Code Linting Engine
