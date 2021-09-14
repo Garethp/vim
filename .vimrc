@@ -33,7 +33,10 @@ set undolevels=100
 set wildignore=*.swp,*.bak,*.pyc,*.class
 
 " Set the clipboard to the system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
+if has('unnamedplus')
+    set clipboard=unnamed,unnamedplus
+endif
 
 " Load various config files
 so ~/.vim/config/lightline.vim
