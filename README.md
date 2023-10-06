@@ -23,6 +23,7 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Vim Fugitive](https://github.com/tpope/vim-fugitive) - Popular wrapper around vim
  * [Vim JSON](https://github.com/elzr/vim-json) - Better JSON syntax
  * [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator) - Adds seamless vim/tmux navigation
+ * [Vim TOML](https://github.com/cespare/vim-toml) - TOML File Syntax
  * [Vimux](https://github.com/benmills/vimux) - Running a command from vim in a tmux shell
 
 ## Personal Configurations
