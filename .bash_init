@@ -1,0 +1,11 @@
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+[[ -f ~/.bash_tty ]] && . ~/.bash_tty
+
+# Next, if we're not in TTY (TTY will give us "linux" as the environment
+# variable), and we have zsh installed, let's assume that we want zsh as
+# our default shell and swap to it if we don't already have a ZSH env
+# var present. This stops us from getting into a loop if we're in zsh and
+# specifically tried to swap to bash for some reason
+if [[ -z "${FBTERM}" && $TERM != "linux" && $TERM != "fbterm" && `command -v zsh` && -z "${ZSH}" ]]; then
+    exec zsh -1
+fi

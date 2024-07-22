@@ -1,0 +1,6 @@
+
+# If TTY let's execute fbterm immediately so that we don't have
+# to worry about executing it manually
+if [[ $TERM = "linux" ]]; then
+    FBTERM=1 fbterm
+fi

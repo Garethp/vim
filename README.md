@@ -6,7 +6,7 @@ This is my own personal vim config so that it's easy to download and install on 
  * Clone this Repository
  * Run `git submodule init && git submodule update` to install plugins
  * Run `stow .` inside the main repo folder to create the Symlinks
- * Add `[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases` to your `.bashrc` file (and/or `.zshrc` file)
+ * Add `[[ -f ~/.bash_init ]] && . ~/.bash_init` to your `.bashrc` file (and/or `.zshrc` file)
 
 ## Installing Extras
  * For `Ale` install `phpcs` and `eslint` globally, as well as any other linters you want Ale to use
@@ -112,7 +112,7 @@ This repo includes suggestions for a few extra configs and aliases for some extr
 
 ### Oh My Zsh
 While this repo doesn't include any config for Oh My Zsh (yet), it is a nice tool to use. Additionally, the config in
-`.bash_aliases` file will automatically swap from bash to `zsh` if `zsh` is installed. We do it in bash and not using
+`.bash_init` file will automatically swap from bash to `zsh` if `zsh` is installed. We do it in bash and not using
 `chsh` because we don't want to use it in TTY (see the next section). It won't drop into zsh if any of the following are
 true:
 
@@ -123,7 +123,7 @@ true:
 
 ### Frame Buffer Mode
 If you're interested in running in TTY mode for some reason, try installing the tool `fbterm` and running the following:
-`usermod -aG video $USER`. With the scripts included in `.bash_aliases` when logging in through TTY you'll automatically
+`usermod -aG video $USER`. With the scripts included in `.bash_tty` when logging in through TTY you'll automatically
 be put into FbTerm, a Frame Buffer terminal emulator that supports colour. The config included should allow for tmux and
 vim to work seamlesslesly in colour mode. 
 
