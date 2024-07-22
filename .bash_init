@@ -9,3 +9,15 @@
 if [[ -z "${FBTERM}" && $TERM != "linux" && $TERM != "fbterm" && `command -v zsh` && -z "${ZSH}" ]]; then
     exec zsh -1
 fi
+
+[[ -f ~/.atuin/bin/env ]] && . ~/.atuin/bin/env
+if [[ ! -z "${BASH}" ]]; then
+    [[ `command -v atuin` ]] && eval "$(atuin init bash --disable-up-arrow)"
+    [[ `command -v zoxide` ]] && eval "$(zoxide init bash)"
+    [[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
+fi
+
+if [[ ! -z "${ZSH}" && -z "${BASH}" ]]; then
+    [[ `command -v atuin` ]] && eval "$(atuin init zsh --disable-up-arrow)"
+    [[ `command -v zoxide` ]] && eval "$(zoxide init zsh)"
+fi
