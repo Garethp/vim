@@ -21,8 +21,9 @@ set nospell
 " Enable mouse support in console
 set mouse=a
 
-" Don't wrap lines
+" Don't wrap lines, but do show a light column limit at 120 columns
 set nowrap
+set colorcolumn=120
 
 " Remember more commands and search history
 set history=1000

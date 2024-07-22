@@ -49,3 +49,24 @@
 [submodule ".vim/bundle/vim-toml"]
 	path = .vim/bundle/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule ".vim/bundle/bundle/dracula"]
+	path = .vim/bundle/bundle/dracula
+	url = git@github.com:dracula/vim.git
+[submodule ".vim/bundle/dracula"]
+	path = .vim/bundle/dracula
+	url = git@github.com:dracula/vim.git
+[submodule ".vim/bundle/darcula"]
+	path = .vim/bundle/darcula
+	url = https://github.com/doums/darcula.git
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/bundle/vim-jsx-pretty"]
+	path = .vim/bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/bundle/vim-test"]
+	path = .vim/bundle/vim-test
+	url = https://github.com/vim-test/vim-test.git

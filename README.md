@@ -2,9 +2,11 @@
 This is my own personal vim config so that it's easy to download and install on machines, with many useful plugins and hopefully clean configuration for reading and adjustign
 
 ## Installation
+ * Install the GNU Stow Tool
  * Clone this Repository
  * Run `git submodule init && git submodule update` to install plugins
- * Create a symlink for `.vimrc`, `.tmux.conf`, `.vim`
+ * Run `stow .` inside the main repo folder to create the Symlinks
+ * Add `[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases` to your `.bashrc` file (and/or `.zshrc` file)
 
 ## Installing Extras
  * For `Ale` install `phpcs` and `eslint` globally, as well as any other linters you want Ale to use
@@ -25,6 +27,10 @@ This is my own personal vim config so that it's easy to download and install on 
  * [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator) - Adds seamless vim/tmux navigation
  * [Vim TOML](https://github.com/cespare/vim-toml) - TOML File Syntax
  * [Vimux](https://github.com/benmills/vimux) - Running a command from vim in a tmux shell
+ * [Vim JavaScript](https://github.com/pangloss/vim-javascript) - Support for JavaScript
+ * [Vim TypeScript](https://github.com/leafgarland/typescript-vim) - Support for TypeScript
+ * [Vim JSX Pretty](https://github.com/MaxMEllon/vim-jsx-pretty.git) - Support for JSX
+ * [Vim Test](https://github.com/vim-test/vim-test.git)
 
 ## Personal Configurations
 
@@ -63,6 +69,7 @@ Open NERDTree with `:NERDTree`, or open it in (improved) tab mode with `:NERDTre
 Alternatively, I've mapped `F3` in normal mode to `:NERDTreeTabsToggle`
 When over file, use `o` to open the file, or `t` to open the file in a tab.
 When over a folder, press `m` to manipulate the folder (Add new files or folders, or moving it).
+To move tabs, use `gt` to move to the next tab, `gT` for the previous and `{num}gt` to go to a specific tab
 See `:help NERDTree` for more information
 
 ### Vim Table Mode
@@ -87,3 +94,38 @@ The key combination `<Leader>vp` will prompt you for a command to run in a tmux 
 `<Leader>vl` will run the last command in tmux
 
 `<Leader>vz` will "zoom" the tmux pane, and then `<Prefix> z` will zoom back out
+
+## Suggested Extras
+This repo includes suggestions for a few extra configs and aliases for some extra nicities
+
+### Extra Utilities
+ * [Atuin](https://atuin.sh/) - A nice tool for managing bash history
+ * [Bat](https://github.com/sharkdp/bat) - A replacement for `cat`
+ * [Btop](https://github.com/aristocratos/btop) - A replacement for `htop`
+ * [Duf](https://github.com/muesli/duf) - A replacement for `df`
+ * [Dust](https://github.com/bootandy/dust) - A replacement for `du`
+ * [Eza](https://github.com/eza-community/eza) - A nice `ls` replacement
+ * [Fzf](https://github.com/junegunn/fzf) - A fuzzy search tool. Suggested install method is to clone and run an install script
+ * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) - A fast and useful code searching tool
+ * [Tldr](https://tldr.sh/) - TL;DR for man pages
+ * [Zoxide](https://github.com/ajeetdsouza/zoxide) - A smart replacement for `cd`
+
+### Oh My Zsh
+While this repo doesn't include any config for Oh My Zsh (yet), it is a nice tool to use. Additionally, the config in
+`.bash_aliases` file will automatically swap from bash to `zsh` if `zsh` is installed. We do it in bash and not using
+`chsh` because we don't want to use it in TTY (see the next section). It won't drop into zsh if any of the following are
+true:
+
+ * We're in TTY
+ * We're in FbTerm (Detected by a `FBTERM` environment variable that's added as an alias)
+ * The `zsh` command is not present
+ * A `ZSH` environment variable is present, indicating that we started in zsh and are trying to jump to bash manually
+
+### Frame Buffer Mode
+If you're interested in running in TTY mode for some reason, try installing the tool `fbterm` and running the following:
+`usermod -aG video $USER`. With the scripts included in `.bash_aliases` when logging in through TTY you'll automatically
+be put into FbTerm, a Frame Buffer terminal emulator that supports colour. The config included should allow for tmux and
+vim to work seamlesslesly in colour mode. 
+
+## TODO
+ * Possibly add some ZSH config
