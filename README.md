@@ -7,6 +7,7 @@ This is my own personal vim config so that it's easy to download and install on 
  * Run `git submodule init && git submodule update` to install plugins
  * Run `stow .` inside the main repo folder to create the Symlinks
  * Add `[[ -f ~/.bash_init ]] && . ~/.bash_init` to your `.bashrc` file (and/or `.zshrc` file)
+ * Add `[[ -f ~/.zsh_plugins ]] %% . ~/.zsh_plugins` to your `.zshrc` file if you have one
 
 ## Installing Extras
  * For `Ale` install `phpcs` and `eslint` globally, as well as any other linters you want Ale to use
