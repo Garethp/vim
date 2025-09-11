@@ -10,8 +10,9 @@ alias sudo="sudo " # This allows us to use other aliases in sudo commnads
 [[ `command -v btop` ]] && alias htop="btop"
 [[ `command -v dust` ]] && alias du="dust -r"
 [[ `command -v duf` ]] && alias df="duf"
-[[ `command -v eza` ]] && alias ls='eza -lhRT -L 1 --no-permissions --git-ignore --group-directories-first'
+[[ `command -v eza` ]] && alias ls='eza -lhRT -L 1 --no-permissions --group-directories-first'
 [[ `command -v zoxide` ]] && alias cd="z"
+[[ `command -v asp` ]] && alias asp="source asp"
 
 # Because of the shenanigans we're doing below to stop us from jumping
 # into zsh automatically at various points and so on, we need to unset
@@ -26,3 +27,7 @@ alias sudo="sudo " # This allows us to use other aliases in sudo commnads
 # FBTERM environment variable available for vim to detect
 [[ `command -v fbterm` ]] && alias fbterm="FBTERM=1 fbterm"
 
+# In ZSH, let's bind CTRL + I to accept the current autosuggest
+#[[ `command -v bindkey` ]] && bindkey '^I' autosuggest-accept
+
+[[ `command -v aws-azure-auth` ]] && alias aws-azure-login="aws-azure-auth"

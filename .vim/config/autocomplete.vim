@@ -1,6 +1,6 @@
 " Make the omni complete only show options, instead of automatically changing
 " the value
-set completeopt=longest,menuone
+set completeopt=longest,menuone,noinsert
 
 " Sets smarter php autocompletion
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
@@ -18,3 +18,19 @@ inoremap <expr> <C-@> pumvisible() ? '<C-x><C-o>' :
 
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+"let g:tsuquyomi_completion_detail = 1
+
+
+"function! OpenCompletion()
+"    if !pumvisible() && ((v:char >= 'a' && v:char <= 'z') || (v:char >= 'A' && v:char <= 'Z'))
+"        call feedkeys("\<C-x>\<C-o>", "n")
+"    endif
+"endfunction
+
+"function! Debounce()
+"        let job = job_start(['sh', '-c', 'sleep 5'], #{close_cb: call OpenCompletion()})
+"    "call OpenCompletion()
+"endfunction
+
+"autocmd InsertCharPre * call Debounce()
